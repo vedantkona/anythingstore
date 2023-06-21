@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {%block title%}Home page{%endblock%} {% block content%} <div class="container"
+    style="padding: 10%;">
+    <div class="screen" style="height: 340px; width: 600px;">
+        <div class="screen__content">
+            <form id="uploadaudioForm" method="POST" enctype="multipart/form-data"> {% csrf_token %} <h3>AUDIO NOTES
+                    UPLOAD HERE</h3>
+                <br>
+                <label for="audio_file" style="text-align: center;">File:</label>
+                <input type="file" name="audio_file" id="audio_file">
+                <br>
+                <input type="submit" value="Upload" class="waves-effect waves-light btn"
+                    style="margin-top: 10%; display: flex; justify-content: center; ">
+            </form>
+        </div>
+    </div>
+</div> {%endblock%}

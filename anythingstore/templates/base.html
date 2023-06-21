@@ -1,0 +1,27 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}{%endblock%}</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{%static 'js/videoscript.js'%}"></script>
+    <script src="{%static 'js/audioscript.js'%}"></script>
+    <script src="{%static 'js/textscript.js'%}"></script>
+</head>
+
+<body> {% include 'Home/header.html' %} {% block content%}{%endblock%} {%include 'Home/footer.html'%}
+    <script>
+        M.AutoInit();
+    </script>
+</body>
+
+</html>

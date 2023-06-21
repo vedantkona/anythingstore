@@ -1,0 +1,39 @@
+{% extends 'base.html' %} {%block title%}Home page{%endblock%} {% block content%} <section>
+    <h3>Text Files</h3> {% if text_files %} <div class="row"> {% for text_file in text_files %} <div class="column">
+            <a href="{{text_file.file.url}}">
+                <div class="card" style="width: 100%;">
+                    <img src="https://img.icons8.com/?size=2x&id=10437&format=png" alt="video" class="card-img-top"
+                        style="height: 200px; width: 200px;">
+                    <div class="card-body">
+                        <p class="card-title" style="font-size: 10px; font-weight: bold;"> {{text_file.file.name}}</p>
+            </a>
+        </div>
+    </div>
+    </div> {% endfor %} </div> {% else %} <p>No text files found.</p> {% endif %}
+</section>
+<section>
+    <h3>Video Files</h3> {% if video_files %} <div class="row"> {% for video_file in video_files %} <div class="column">
+            <a href="{{video_file.file.url}}">
+                <div class="card" style="width: 100%;">
+                    <img src="https://img.icons8.com/?size=512&id=106753&format=png" alt="video" class="card-img-top"
+                        style="height: 200px; width: 200px;">
+                    <div class="card-body">
+                        <p class="card-title" style="font-size: 10px; font-weight: bold;"> {{video_file.file.name}}</p>
+            </a>
+        </div>
+    </div>
+    </div> {% endfor %} </div> {% else %} <p>No video files found.</p> {% endif %}
+</section>
+<section>
+    <h3>Audio Files</h3> {% if audio_files %} <div class="row"> {% for audio_file in audio_files %} <div class="column">
+            <a href="{{audio_file.file.url}}">
+                <div class="card" style="width: 100%;">
+                    <img src="https://img.icons8.com/?size=512&id=11613&format=png" alt="audio" class="card-img-top"
+                        style="height: 200px; width: 200px;">
+                    <div class="card-body">
+                        <p class="card-title" style="font-size: 10px; font-weight: bold;"> {{audio_file.file.name}} </p>
+            </a>
+        </div>
+    </div>
+    </div> {% endfor %} </div> {% else %} <p>No audio files found.</p> {% endif %}
+</section> {%endblock%}

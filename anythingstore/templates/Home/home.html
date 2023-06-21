@@ -1,0 +1,52 @@
+{% extends 'base.html' %} {%block title%}Home page{%endblock%} {% block content%} <section class="banner" id="banner">
+    <div class="container">
+        <div class="text">
+            <h1 style="font-size: 80px; font-weight: bolder;">ANYTHINGSTORE</h1>
+            <p style="font-size: 30px; text-transform: uppercase;">"Empower your thoughts, capture your ideas, and share
+                your knowledge. Welcome to our platform, where notes find their home."</p>
+        </div><img src="https://freesvgillustration.com/wp-content/uploads/2021/12/Bloging-Line.svg" alt="image"
+            style="width: 520px; height: 520px;">
+    </div>
+</section>
+<section>
+    <h3 style="text-align: center;">TEXT NOTES</h3>
+    <div class="container">
+        <img src="https://freesvgillustration.com/wp-content/uploads/2022/02/Food-Delivery_Online-Pizza-Delivery.svg"
+            alt="image" style="width: 400px; height: 400px; margin-left: -70px; ">
+        <div class="text">
+            <h3 style="font-size: 50px; font-weight: bolder; text-align: center; ">TEXT NOTE STORE </h3>
+            <p style="font-size: 30px; text-align: justify; ">"IF YOU DONT HAVE SPACE AND WANT TO STORE TEXT HERE CLICK
+                ON THE BUTTON YOU CANT STORE AND WE ARE KEEPING IT SAFE."</p>
+            <a href="{%url 'textnote'%}" class="waves-effect waves-light btn"
+                style="background: #cc776b; justify-content: center; ">LET'S STORE TEXT NOTES</a>
+        </div>
+    </div>
+</section>
+<section>
+    <h3 style="text-align: center;">AUDIO NOTES</h3>
+    <div class="container">
+        <div class="text">
+            <h3 style="font-size: 40px; font-weight: bolder; text-align: center; ">AUDIO NOTE STORE </h3>
+            <p style="font-size: 30px; text-align: justify; ">"IF YOU DONT HAVE SPACE AND WANT TO STORE audio HERE CLICK
+                ON THE BUTTON YOU CANT STORE AND WE ARE KEEPING IT SAFE."</p>
+            <a href="{%url 'audionote'%}" class="waves-effect waves-light btn"
+                style="background: #cc776b; justify-content: center; ">LET'S STORE AUDIO NOTES</a>
+        </div>
+        <img src="https://freesvgillustration.com/wp-content/uploads/2022/02/Food-Delivery_Online-Pizza-Delivery.svg"
+            alt="image" style="width: 400px; height: 400px;">
+    </div>
+</section>
+<section>
+    <h3 style="text-align: center;">VIDEO NOTES</h3>
+    <div class="container">
+        <img src="https://freesvgillustration.com/wp-content/uploads/2022/02/Food-Delivery_Online-Pizza-Delivery.svg"
+            alt="image" style="width: 400px; height: 400px;">
+        <div class="text">
+            <h3 style="font-size: 40px; font-weight: bolder; text-align: center; ">VIDEO NOTE STORE </h3>
+            <p style="font-size: 30px; text-align: justify; ">"IF YOU DONT HAVE SPACE AND WANT TO STORE video HERE CLICK
+                ON THE BUTTON YOU CANT STORE AND WE ARE KEEPING IT SAFE."</p>
+            <a href="{%url 'videonote'%}" class="waves-effect waves-light btn"
+                style="background: #cc776b; justify-content: center; ">LET'S STORE VIDEO NOTES</a>
+        </div>
+    </div>
+</section> {%endblock%}
